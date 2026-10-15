@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pool form</title>
+        <meta name="description" content="Contact Information">
+        <link rel="stylesheet" href="styles/poll-form.css">
+    </head>
+    <body>
+        <header>
+            <hi>Contact Information</hi>
+        </header>
+            <main>
+                <form>
+                    <!--Contact Information-->
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-item column2">
+                            <label for="fullname">Full name:</label>
+                            <input type="text" id="fullname" name="fullname" required> 
+                        </div>
+                            <div class="form-item column2">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email">
+                        </div>    
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Questions</legend>  
+                        <div class="form-item column1">
+                            <label for="country">Select Country</label>
+                            <select name="country" id="country">
+                               <option value="Ghana">Ghana</option>
+                               <option value="South Africa">south africa</option>
+                               <option value="egypt">Egypt</option>
+                               <option value="Nigeria">Nigeria</option> 
+                            </select>
+                        </div>
+                        <div class="form-item column1">
+                            <label for="pet">Do you have a household pet?</label>
+                            <input type="checkbox" id="pet" name="pet">
+                        </div>
+                            <label for="feedback">List the places you have lived:</label>
+                            <textarea id="feedback" name="feedback" rows="3" placeholder="still water florida, South africa, Nigeria, Togo"></textarea>
+                    </fieldset>
+                    <div class="btn-center">
+                        <button type="submit">Submit poll</button>
+                    </div>    
+                </form>   
+            </main>
+    </body>  
+    <footer>
+        <p>🌴Contact Form🌴</p>
+    </footer>  
+</html>
